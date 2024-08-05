@@ -55,7 +55,7 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.retrofit.gson)
     implementation(libs.lifecycle.viewmodel)
-    implementation(libs.lifecycle.livedata)a
+    implementation(libs.lifecycle.livedata)
     implementation(libs.lifecycle.runtime)
 
 }
