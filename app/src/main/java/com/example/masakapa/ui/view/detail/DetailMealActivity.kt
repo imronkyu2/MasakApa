@@ -18,6 +18,7 @@ import com.example.masakapa.databinding.ActivityDetailMealBinding
 import com.example.masakapa.ui.viewmodel.MealViewModel
 import com.example.masakapa.ui.viewmodel.MealViewModelFactory
 import com.example.masakapa.utils.Ingredients
+import com.example.masakapa.utils.Instructions
 import com.example.masakapa.utils.Resource
 
 class DetailMealActivity : AppCompatActivity() {
@@ -91,7 +92,8 @@ class DetailMealActivity : AppCompatActivity() {
                         youtubeLink = meal.strYoutube
                         binding.tvIngredients.text = Ingredients.getFormattedIngredients(meal)
                         binding.tvMeasures.text = Ingredients.getFormattedMeasures(meal)
-                        binding.jtvInstructions.text = meal.strInstructions
+                        binding.jtvInstructions.text = Instructions.getFormattedInstructions(meal.strInstructions)
+
                     }
                 }
 
